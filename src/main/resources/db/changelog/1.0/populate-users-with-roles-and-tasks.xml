@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+         http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.5.xsd">
+
+    <changeSet id="2020-06-14-12-40-00" author="MichaelMeleshkin">
+
+        <insert tableName="user_entity">
+            <column name="username" value="johndoe"/>
+            <column name="password" value="$2a$12$ycpkuIFMUH8fnYAjkWptjO8cSh17.Gh9YuOyFWT38g03TQNyakqt2"/>
+            <column name="first_name" value="John"/>
+            <column name="last_name" value="Doe"/>
+            <column name="email" value="JohnDoe@mailinator.com"/>
+        </insert>
+
+        <insert tableName="user_roles">
+            <column name="user_id" value="1"/>
+            <column name="roles" value="0"/>
+        </insert>
+        <insert tableName="user_roles">
+            <column name="user_id" value="1"/>
+            <column name="roles" value="1"/>
+        </insert>
+
+        <insert tableName="user_task">
+            <column name="user_id" value="1"/>
+            <column name="name" value="first task"/>
+            <column name="description" value="first task description"/>
+            <column name="status" value="0"/>
+        </insert>
+        <insert tableName="user_task">
+            <column name="user_id" value="1"/>
+            <column name="name" value="second task"/>
+            <column name="description" value="second task description"/>
+            <column name="status" value="0"/>
+        </insert>
+        <insert tableName="user_task">
+            <column name="user_id" value="1"/>
+            <column name="name" value="Lorem ipsum dolor sit amet"/>
+            <column name="description" value="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum eget dignissim felis. Donec venenatis tincidunt accumsan. Nam id ultrices magna. Nulla aliquet pretium arcu at sodales. Morbi lacinia nisi lectus, eu tempus tortor tempor id. Proin laoreet ante tincidunt magna malesuada dapibus nec ut ante. Quisque sagittis maximus diam, condimentum fermentum tellus tempus sed. Vivamus sed tempus urna, in feugiat neque. Nulla sed arcu sed nisi euismod sagittis et sit amet leo. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Ut porttitor ut nisi porttitor gravida."/>
+            <column name="status" value="0"/>
+        </insert>
+        <insert tableName="user_task">
+            <column name="user_id" value="1"/>
+            <column name="name" value="Sed augue tortor, tempor in libero"/>
+            <column name="description" value="Sed augue tortor, tempor in libero a, blandit blandit massa. Sed auctor lacus euismod fringilla imperdiet. Sed ac dolor imperdiet, condimentum felis et, luctus justo. Integer molestie condimentum ante sit amet dapibus. Phasellus porta nibh lacus, sed aliquam mauris rutrum in. Mauris et malesuada urna, sed laoreet lacus."/>
+            <column name="status" value="0"/>
+        </insert>
+        <insert tableName="user_task">
+            <column name="user_id" value="1"/>
+            <column name="name" value="Fusce non libero nec lorem lobortis accumsan at non turpis"/>
+            <column name="description" value="Phasellus varius vitae nisi vitae suscipit. Duis blandit est vitae velit semper, vitae vestibulum ipsum ultrices. Mauris ornare diam eget ipsum egestas scelerisque. Aliquam laoreet nec nulla ut dignissim. Vivamus tristique enim sit amet ex congue finibus. In fermentum maximus mauris, et finibus odio scelerisque efficitur. Nullam non ullamcorper neque. Donec a eleifend sapien, non facilisis dui."/>
+            <column name="status" value="0"/>
+        </insert>
+        <insert tableName="user_task">
+            <column name="user_id" value="1"/>
+            <column name="name" value="Nam pharetra turpis nibh, eu convallis ante sagittis a. Duis et facilisis erat, id imperdiet sapien."/>
+            <column name="description" value="Etiam malesuada rhoncus eros a porttitor. Phasellus quis aliquam mauris. Fusce consectetur velit in viverra sollicitudin. Aenean eu ornare orci. Etiam aliquam dignissim lorem, vitae tincidunt enim. Nam tempor tincidunt urna, auctor suscipit lectus convallis non. Cras lacinia libero ut magna suscipit luctus. Curabitur vestibulum rhoncus risus, in convallis nisl tincidunt sit amet. Nullam molestie lorem a diam tristique, in varius magna congue."/>
+            <column name="status" value="1"/>
+        </insert>
+        <insert tableName="user_task">
+            <column name="user_id" value="1"/>
+            <column name="name" value="Donec imperdiet, augue sed"/>
+            <column name="description" value="Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas."/>
+            <column name="status" value="0"/>
+        </insert>
+
+    </changeSet>
+
+</databaseChangeLog>
